@@ -1,0 +1,184 @@
+/*building*/
+.building{
+height: 1000px;
+width: 200%;
+background: url(building.png);
+position: absolute;
+bottom: 0px;
+left: 0;
+right: 0;
+
+z-index: 1;
+background-repeat: repeat-x;
+animation: building 12s linear infinite;
+overflow: hidden !important;
+}
+
+/*grass*/
+.grass{
+height: 800px;
+width: 400%;
+background: url(grass.png);
+position: absolute;
+bottom: -600px;
+left: 0;
+right: 0;
+z-index: 1;
+background-repeat: repeat-x;
+animation: grass 20s linear infinite;
+overflow: hidden !important;
+}
+
+@keyframes grass{
+100%{
+transform: translate(-2400px);
+}
+}
+
+@keyframes building{
+100%{
+transform: translateX(-1400px);
+}
+}
+
+/*harry*/
+.harry{
+    z-index: 2;
+    animation: harryshake linear 6s infinite;
+}
+.harry img{
+width: 50%;
+animation: harryrotation linear 2s infinite;
+}
+@keyframes harryshake{
+0%{
+transform: translateY(-50px);
+transform: translateX(0px);
+transform: scale(0.50);
+}
+30%{
+transform: translateY(1px);
+transform: translateX(100px);
+transform: scale(0.50);
+
+}
+60%{
+    transform: translateY(1px);
+    transform: translateX(200px);
+    transform: scale(0.50);
+ 
+    }
+100%{
+transform: translateY(-50px);
+transform: translateX(300px);
+transform: scale(0.50);
+}
+}
+@keyframes harryrotation{
+    50%{
+        transform: rotate(20deg);
+    }
+100%{
+transform: rotate(10deg);
+}
+}
+
+/*star*/
+.star {
+position: absolute;
+      background: url("https://mtedwards.s3.amazonaws.com/sparkle.png") no-repeat;
+      background-size: contain;
+      overflow: hidden;
+      animation: hashake linear 2s infinite;
+     
+  }
+.star.star-1 {
+
+top:110px;
+left:97px;
+
+}
+
+.star.star-2 {
+width: 55px;
+height: 50px;
+top:18px;
+left:224px;
+
+}
+.star.star-3 {
+width: 65px;
+height: 60px;
+top:115px;
+left:172px;
+}
+.star.star-4 {
+width: 68px;
+height: 70px;
+top:46px;
+left:162px;
+}
+
+.star.star-5 {
+    width: 68px;
+    height: 70px;
+    top:46px;
+    left:662px;
+    }
+
+    .star.star-6 {
+        width: 68px;
+        height: 70px;
+        top:25px;
+        left:782px;
+        }
+        .star.star-7 {
+            width: 68px;
+            height: 70px;
+            top:35px;
+            left:850px;
+            }
+
+@keyframes hashake{
+        0%{
+       transform:  scale(1);
+        }
+        50%{
+            transform: scale(1.5);
+        }
+        100%{
+        transform:  scale(1);
+        }
+        }
+
+
+body{
+    overflow: hidden;
+}
+
+/*witch*/
+.witch {
+    background-image: url(witch.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 233px;
+    height: 254px;
+    position: absolute;
+    bottom: 200px;
+    left: 52px;
+}
+
+.animatewitch{
+    animation: witch 0.6s linear;
+}
+@keyframes witch{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 300px;
+    }
+    100%{
+    bottom: 0;
+    }
+}
