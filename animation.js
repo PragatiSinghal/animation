@@ -24,6 +24,6 @@ window.onload = function () {
     if (e.keyCode == 37) {
         witch = document.querySelector('.witch');
         witchX = parseInt(window.getComputedStyle(witch, null).getPropertyValue('left'));
-        witch.style.left = (dinoX - 112) + "px";
+        witch.style.left = (witchX - 112) + "px";
     }
 }
